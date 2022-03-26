@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{B5996646-C2E3-4FB5-A42D-81D0216602B5}|Default">
+  <MonoDevelop.Ide.ItemProperties.LaytonTempleTours PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LaytonTempleTours/Models/AppointmentContext.cs">
+    <Files>
+      <File FileName="LaytonTempleTours/Models/AppointmentContext.cs" Line="131" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LaytonTempleTours" expanded="True">
+            <Node name="LaytonTempleTours" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="AppointmentContext.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

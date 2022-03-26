@@ -128,34 +128,7 @@ namespace LaytonTempleTours.Models
     }
 }
 
-            //protected override void OnModelCreating(ModelBuilder mb)
-            //{
-            //    int IdCounter = 1;
-            //    int month = 3;
-            //    int year = 2022;
-            //    int day = 20;
-            //    int hour = 8;
 
-//    while (day < 27)
-//    {
-//        while (hour < 21)
-//        {
-//            mb.Entity<Time>().HasData(
-//                new Time
-//                {
-//                    TimeId = IdCounter,
-//                    DateTime = new DateTime(year, month, day, hour, 0, 0),
-//                    SlotAvailable = true
-//                }
-//            );
-//            IdCounter++;
-//            hour++;
-//        }
-//        day++;
-//        hour = 8;
-//    }
-
-//}
 
 
 
