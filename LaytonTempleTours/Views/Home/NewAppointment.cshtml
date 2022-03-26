@@ -1,0 +1,60 @@
+﻿<!--Form to create/edit an appointment-->
+@{
+    ViewData["Title"] = "Add Appointment";
+    Time chosenTime = ViewBag.AppointmentTime;
+}
+
+@model LaytonTempleTours.Models.Appointment
+
+    <br />
+    <h5 class="display-4 lh-1 mb-4" style="font-size:30px;">Enter Appointment Details:</h5>
+
+    <!--Create a form to add appointments-->
+    <div>
+        <fieldset style="width: 250px;">
+            <form method="post">
+
+                <div asp-validation-summary="All"></div>
+
+                <input type="hidden" asp-for="TimeId" value="@chosenTime.TimeId" />
+
+                <label for="Date">Date:</label>
+                <br />
+                <input disabled value="@chosenTime.DateTime.ToShortDateString()" id="date" />
+                <br /><br />
+
+                <label for="Time">Time:</label>
+                <br />
+                <input disabled value="@chosenTime.DateTime.ToShortTimeString()" id="time" />
+                <br /><br />
+
+                <label asp-for="GroupName">Group Name:</label>
+                <br />
+                <input asp-for="GroupName" />
+                <br /><br />
+
+                <label asp-for="SizeOfGroup">Group Size:</label>
+                <br />
+                <input asp-for="SizeOfGroup" />
+                <br /><br />
+
+                <label asp-for="Email">Email Address:</label>
+                <br />
+                <input asp-for="Email" />
+                <br /><br />
+
+                <label asp-for="Phone">Phone Number:</label>
+                <br />
+                <input asp-for="Phone" />
+                <br />
+                <br />
+
+                <input type="hidden" asp-for="AppointmentId" />
+
+                <button type="submit" class="btn btn-info">Add Appointment</button>
+            </form>
+        </fieldset>
+
+        <br /><br />
+
+    </div>

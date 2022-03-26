@@ -1,0 +1,44 @@
+﻿<!--Appointment List View-->
+
+@{
+    ViewData["Title"] = "View Appointments";
+}
+
+@model List<Appointment>
+
+    <h5 class="display-4 lh-1 mb-4" style="font-size:30px;">Appointments</h5>
+
+    <table class="table table-bordered table-striped table-hover table-dark">
+
+        <thead class="font-weight-bold">
+            <tr>
+                <td>Date</td>
+                <td>Time</td>
+                <td>Group Name</td>
+                <td>Group Size</td>
+                <td>Email</td>
+                <td>Phone Number</td>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--List out appointments in database-->
+            @foreach (var x in Model)
+            {
+                <tr>
+                    <td>@x.Time.DateTime.ToShortDateString()</td>
+                    <td>@x.Time.DateTime.ToShortTimeString()</td>
+                    <td>@x.GroupName</td>
+                    <td>@x.SizeOfGroup</td>
+                    <td>@x.Email</td>
+                    <td>@x.Phone</td>
+
+                    <!--edit and delete buttons-->
+                    <td><a class="btn btn-outline-info" asp-controller="Home" asp-action="Edit" asp-route-appid="@x.AppointmentId">Edit</a></td>
+                    <td><a class="btn btn-outline-danger" asp-controller="Home" asp-action="Delete" asp-route-appid="@x.AppointmentId">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
